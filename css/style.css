@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  overflow: hidden;
+  background-color: #999;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.container__block {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__block .game__menu {
+  width: 10%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-bottom: 25px solid #333;
+  border-top: 25px solid #333;
+  background-color: #000;
+  padding: 25px 15px;
+}
+
+.container__block .game__menu .logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #111;
+  padding: 16px 0;
+  border-radius: 10px;
+}
+
+.container__block .game__menu .logo .logo__img {
+  width: 60px;
+  height: 60px;
+}
+
+.container__block .game__menu .logo .logo_text {
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.container__block .game__menu .logo .logo_text span:nth-child(1) {
+  color: #0f0;
+}
+
+.container__block .game__menu .logo .logo_text span:nth-child(2) {
+  color: #f00;
+}
+
+.container__block .game__menu .cube {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 16px 0;
+  border-radius: 10px;
+  margin-top: 25px;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container__block .game__menu .cube .cube__img {
+  width: 60px;
+  height: 60px;
+  opacity: 0.6;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container__block .game__menu .cube .cube_text {
+  font-size: 14px;
+  margin-top: 15px;
+  color: #999;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container__block .game__menu .cube:hover {
+  background-color: #111;
+}
+
+.container__block .game__menu .cube:hover .cube_text {
+  color: #0ff;
+}
+
+.container__block .game__menu .cube:hover .cube__img {
+  opacity: 1;
+}
+
+.container__block .game__menu .about {
+  width: 100%;
+  cursor: pointer;
+  margin-top: 25px;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #0ff;
+  border-radius: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container__block .game__menu .about:hover {
+  background-color: #111;
+}
+
+.container__block .game__area {
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+  border: 25px solid #333;
+  background-image: url("../image/wall.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    overflow: hidden;
+    background-color: #999;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.container__block {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    .game__menu {
+        width: 10%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-bottom: 25px solid #333;
+        border-top: 25px solid #333;
+        background-color: #000;
+        padding: 25px 15px;
+        .logo {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #111;
+            padding: 16px 0;
+            border-radius: 10px;
+            .logo__img {
+                width: 60px;
+                height: 60px;
+            }
+            .logo_text {
+                font-size: 15px;
+                margin-top: 15px;
+                span {
+                    &:nth-child(1) {
+                        color: #0f0;
+                    }
+                    &:nth-child(2) {
+                        color: #f00;
+                    }
+                }
+            }
+        }
+        .cube {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 16px 0;
+            border-radius: 10px;
+            margin-top: 25px;
+            cursor: pointer;
+            transition: 0.4s;
+            .cube__img {
+                width: 60px;
+                height: 60px;
+                opacity: 0.6;
+                transition: 0.4s;
+            }
+            .cube_text {
+                font-size: 14px;
+                margin-top: 15px;
+                color: #999;
+                transition: 0.4s;
+            }
+            &:hover {
+                background-color: #111;
+                .cube_text {
+                    color: #0ff;
+                }
+                .cube__img {
+                    opacity: 1;
+                }
+            }
+        }
+        .about {
+            width: 100%;
+            cursor: pointer;
+            margin-top: 25px;
+            padding: 15px 0;
+            font-size: 14px;
+            color: #0ff;
+            border-radius: 10px;
+            transition: 0.4s;
+            &:hover {
+                background-color: #111;
+            }
+        }
+    }
+    .game__area {
+        width: 90%;
+        height: 100%;
+        overflow: hidden;
+        border: 25px solid #333;
+        background-image: url("../image/wall.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+    }
+}
