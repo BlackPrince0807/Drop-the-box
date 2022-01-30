@@ -42,8 +42,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  border-bottom: 25px solid #333;
-  border-top: 25px solid #333;
+  border-bottom: 20px solid #333;
+  border-top: 20px solid #333;
   background-color: #000;
   padding: 25px 15px;
 }
@@ -66,7 +66,7 @@ body {
   border-radius: 10px;
 }
 
-.container__block .game__menu .logo .logo__img {
+.container__block .game__menu .logo .logo_img {
   width: 60px;
   height: 60px;
 }
@@ -105,9 +105,8 @@ body {
   transition: 0.4s;
 }
 
-.container__block .game__menu .cube .cube__img {
-  width: 60px;
-  height: 60px;
+.container__block .game__menu .cube .cube_icon {
+  font-size: 60px;
   opacity: 0.6;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -115,8 +114,8 @@ body {
 
 .container__block .game__menu .cube .cube_text {
   font-size: 14px;
-  margin-top: 15px;
-  color: #999;
+  margin-top: 8px;
+  opacity: 0.6;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -126,10 +125,10 @@ body {
 }
 
 .container__block .game__menu .cube:hover .cube_text {
-  color: #0ff;
+  opacity: 1;
 }
 
-.container__block .game__menu .cube:hover .cube__img {
+.container__block .game__menu .cube:hover .cube_icon {
   opacity: 1;
 }
 
@@ -152,12 +151,58 @@ body {
 .container__block .game__area {
   width: 90%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   overflow: hidden;
-  border: 25px solid #333;
+  border: 20px solid #333;
   background-image: url("../image/wall.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   cursor: pointer;
+  position: relative;
+}
+
+.container__block .game__area .game_robo {
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.container__block .game__area .game_box {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.transition {
+  -webkit-animation: 5s boxdrop forwards;
+          animation: 5s boxdrop forwards;
+}
+
+@-webkit-keyframes boxdrop {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes boxdrop {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

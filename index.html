@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- box icon link -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <!-- css link -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Drop the box</title>
@@ -14,31 +16,58 @@
     <div class="container__block">
         <div class="game__menu">
             <div class="logo">
-                <img class="logo__img" src="./image/box.png" alt="box">
+                <img class="logo_img" src="./image/box.png" alt="box">
                 <h1 class="logo_text"><span>Box</span><span>Drop</span></h1>
             </div>
             <div class="cube">
-                <img class="cube__img" src="./image/box.png" alt="box">
-                <b class="cube_text">Cube</b>
+                <i class='bx bx-repost cube_icon' style='color: #0f0'></i>
+                <b class="cube_text">Repeat</b>
             </div>
             <div class="cube">
-                <img class="cube__img" src="./image/box.png" alt="box">
-                <b class="cube_text">Cube</b>
+                <i class='bx bx-repost cube_icon' style='color: #0f0'></i>
+                <b class="cube_text">Repeat</b>
             </div>
             <div class="cube">
-                <img class="cube__img" src="./image/box.png" alt="box">
-                <b class="cube_text">Cube</b>
+                <i class='bx bx-repost cube_icon' style='color: #0f0'></i>
+                <b class="cube_text">Repeat</b>
             </div>
             <p class="about">About</p>
         </div>
         <div class="game__area">
-
+            <img class="game_robo" src="./image/game__robo.png" alt="game__robo">
+            <img class="game_box" src="./image/box.png" alt="box">
         </div>
+
+
+
+        <!-- game musics -->
+        <audio class="game_general_music">
+            <source src="./music/game_general.mp3" type="audio/mp3">
+        </audio>
+        <audio class="game_start_music">
+            <source src="./music/game_start.mp3" type="audio/mp3">
+        </audio>
+        <audio class="one_row_ disappear_music">
+            <source src="./music/one_row_win.mp3" type="audio/mp3">
+        </audio>
+        <audio class="gameover_one_music">
+            <source src="./music/game_over_one.mp3" type="audio/mp3">
+        </audio>
+        <audio class="gameover_two_music">
+            <source src="./music/game_over_two.mp3" type="audio/mp3">
+        </audio>
+        <audio class="game_click_music">
+            <source src="./music/button_click.mp3" type="audio/mp3">
+        </audio>
     </div>
+
+
 
 
     <!-- vanilla js link -->
     <script src="./js/script.js"></script>
 </body>
+
+</html>
 
 </html>
